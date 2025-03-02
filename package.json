@@ -1,0 +1,57 @@
+{
+  "name": "github-auto-commit",
+  "displayName": "GitHub Auto Commit",
+  "description": "Automatically creates and updates GitHub repositories",
+  "version": "0.0.1",
+  "publisher": "your-publisher-name",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "github-auto-commit.start",
+        "title": "Start Auto Commit"
+      },
+      {
+        "command": "github-auto-commit.stop",
+        "title": "Stop Auto Commit"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "node ./test/runTest.js",
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "dependencies": {
+    "@octokit/rest": "^19.0.7",
+    "simple-git": "^3.19.1"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.80.0",
+    "eslint": "^8.47.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/harshchinmalliofficial/github-auto-commit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/harshchinmalliofficial/github-auto-commit/issues"
+  },
+  "homepage": "https://github.com/harshchinmalliofficial/github-auto-commit#readme",
+  "keywords": [
+    "git",
+    "github",
+    "automation",
+    "commit",
+    "repository"
+  ],
+  "license": "MIT"
+}
